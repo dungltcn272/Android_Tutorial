@@ -16,7 +16,6 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:hint="Username"/>
-
     <EditText
         android:id="@+id/edit_address"
         android:layout_width="match_parent"
@@ -26,39 +25,12 @@
         android:textSize="16sp"
         android:hint="Address"/>
     <Button
-        android:id="@+id/btn_add_user"
+        android:id="@+id/btn_update_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/teal_700"
         android:textSize="16sp"
-        android:text="Add User"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/tv_delete_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete all"
-        android:layout_gravity="end"
-        android:textSize="20sp"
-        android:textColor="@color/teal_700"
-        android:layout_marginTop="10dp"/>
-
-    <EditText
-        android:id="@+id/edt_search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter name"
-        android:inputType="text"
-        android:imeOptions="actionSearch"
-        android:background="@drawable/bg_white_boder_grey"
-        android:padding="10dp"
-        android:textColor="@color/black"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rcv_user"
+        android:text="Update User"
         android:layout_marginTop="20dp"/>
 
 </LinearLayout>
