@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Add To Cart Animetion</string>
+    <string name="Product_fragment">Product fragment</string>
+    <string name="Cart_fragment">Cart fragment</string>
+    <string name="Notice_fragment">Notice fragment</string>
+    <string name="tab_1">Product</string>
+    <string name="tab_2">Cart</string>
+    <string name="tab_3">Notice</string>
+
+</resources>
