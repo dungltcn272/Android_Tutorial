@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rcvUser: RecyclerView
     private lateinit var tvDeleteAll : TextView
     private lateinit var edtSearch: EditText
+    private lateinit var edtYear : EditText
 
     private lateinit var userAdapter: UserAdapter
     private lateinit var mListUser: List<User>
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         initUi()
 
         userAdapter = UserAdapter(object : UserAdapter.IClickItemUser {
@@ -81,11 +83,12 @@ class MainActivity : AppCompatActivity() {
     private fun addUser() {
         val strUsername = edtUsername.text.toString().trim()
         val strAddress = edtAddress.text.toString().trim()
+        val strYear = edtYear.text.toString().trim()
 
         if (TextUtils.isEmpty(strUsername) || TextUtils.isEmpty(strAddress)) {
             return
         }
-        val user = User(strUsername, strAddress)
+        val user = User(strUsername, strAddress, strYear)
 
         if (isUserExist(user)) {
             Toast.makeText(this, "User exist", Toast.LENGTH_SHORT).show()
@@ -96,6 +99,7 @@ class MainActivity : AppCompatActivity() {
 
         edtUsername.setText("")
         edtAddress.setText("")
+        edtYear.setText("")
         hideSoftKeyboard()
 
         loadData()
@@ -120,6 +124,7 @@ class MainActivity : AppCompatActivity() {
         rcvUser = findViewById(R.id.rcv_user)
         tvDeleteAll=findViewById(R.id.tv_delete_all)
         edtSearch=findViewById(R.id.edt_search)
+        edtYear=findViewById(R.id.edit_year)
     }
 
     private fun hideSoftKeyboard() {

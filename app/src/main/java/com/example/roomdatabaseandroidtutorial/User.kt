@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "user")
-class User(var username: String,var address: String) : java.io.Serializable{
+class User(var username: String,var address: String, var year: String) : java.io.Serializable{
 
     @PrimaryKey(autoGenerate = true)
     var id : Int = 0

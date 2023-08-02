@@ -26,6 +26,7 @@ class UserAdapter (private val iClickItemUser: IClickItemUser) : RecyclerView.Ad
         val tvAddress =itemView.findViewById<TextView>(R.id.tv_address)
         val btnUpdate =itemView.findViewById<Button>(R.id.btn_update)
         val btnDelete =itemView.findViewById<Button>(R.id.btn_delete)
+        val tvYear =itemView.findViewById<TextView>(R.id.tv_year)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
@@ -47,6 +48,7 @@ class UserAdapter (private val iClickItemUser: IClickItemUser) : RecyclerView.Ad
         }
         holder.tvUsername.text=user.username
         holder.tvAddress.text=user.address
+        holder.tvYear.text = user.year
 
         holder.btnUpdate.setOnClickListener {
             iClickItemUser.updateUser(user)
