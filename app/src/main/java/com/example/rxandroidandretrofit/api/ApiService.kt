@@ -1,5 +1,6 @@
-package com.example.rxandroidandretrofit
+package com.example.rxandroidandretrofit.api
 
+import com.example.rxandroidandretrofit.model.ObjectData
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import io.reactivex.rxjava3.core.Observable
 import okhttp3.OkHttpClient

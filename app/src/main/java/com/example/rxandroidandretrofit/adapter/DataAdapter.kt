@@ -1,10 +1,12 @@
-package com.example.rxandroidandretrofit
+package com.example.rxandroidandretrofit.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rxandroidandretrofit.R
+import com.example.rxandroidandretrofit.model.ObjectData
 
 class DataAdapter (private val mListData : List<ObjectData>): RecyclerView.Adapter<DataAdapter.DataViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataViewHolder {
